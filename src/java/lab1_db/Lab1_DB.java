@@ -12,6 +12,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.*;
 
 /**
  *
@@ -32,6 +33,10 @@ public class Lab1_DB {
             List<Studentyi> students = group.getStudentyis();
             for(Studentyi student : students){
                 System.out.println(student.getNomerZachetki());
+                System.out.println(student.getGruppyi());
+                System.out.println(student.getFamiliya());
+               System.out.println( student.getImya());
+               System.out.println( student.getOtchestvo());
             }
         }   
         s.close();
